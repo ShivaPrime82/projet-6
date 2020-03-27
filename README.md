@@ -27,7 +27,7 @@
 	- [X] Articles
 		- [X] create.html
 		- [X] delete.html
-	- [W] Comments
+	- [X] Comments
 		- [X] create.html
 		- [X] delete.html
 
