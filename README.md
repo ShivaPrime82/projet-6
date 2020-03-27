@@ -1,6 +1,6 @@
 - [X] Initialiser un projet Node
 - [X] Initialiser un projet Git
-- [] Publication sur Github
+- [X] Publication sur Github
 - [X] Installation eslint et configuration
 - [X] Installation express et Mysql
 - [X] Création d'une table Mysql -> mettre les commandes de créations dans le projet (fichier sql)
@@ -16,19 +16,19 @@
 		- [X] Author INT
 		- [X] Content VARCHAR(100)
 		- [X] Created_at (DATETIME)
-- [] Création d'un CRD (pas d'update, on la pas vu) node :
-	- [] Route '/api/articles/create' => permet de créer un article id
-	- [] Route '/api/articles/delete' => permet de supprimer un article par son id
-	- [] Route '/api/articles' => permet de récupérer les 5 dernièrs articles dans un tableau
-	- [] Route '/api/comments/create' => permet de créer un commentaire
-	- [] Route '/api/comments/delete' => permet de supprimer un commentaire par son id
-	- [] Route '/api/comments' => permet de récupérer les 5 dernièrs commentaires
-- [] Création de formulaires HTML pour tout tester
-	- [] Articles
-		- [] create.html
-		- [] delete.html
-	- [] Comments
-		- [] create.html
-		- [] delete.html
+- [ ] Création d'un CRD (pas d'update, on la pas vu) node :
+	- [X] Route '/api/articles/create' => permet de créer un article id
+	- [X] Route '/api/articles/delete' => permet de supprimer un article par son id
+	- [X] Route '/api/articles' => permet de récupérer les 5 dernièrs articles dans un tableau
+	- [ ] Route '/api/comments/create' => permet de créer un commentaire
+	- [ ] Route '/api/comments/delete' => permet de supprimer un commentaire par son id
+	- [X] Route '/api/comments' => permet de récupérer les 5 dernièrs commentaires
+- [ ] Création de formulaires HTML pour tout tester
+	- [ ] Articles
+		- [X] create.html
+		- [X] delete.html
+	- [ ] Comments
+		- [ ] create.html
+		- [ ] delete.html
 
 
