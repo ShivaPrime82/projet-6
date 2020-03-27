@@ -4,12 +4,12 @@
 4 - [X] Installation eslint et configuration
 5 - [X] Installation express et Mysql
 6 - [] Création d'une table Mysql -> mettre les commandes de créations dans le projet (fichier sql)
-	- [] Articles
-		- [] ID INT AUTO_INCREMENT NON NULL
-		- [] Title VARCHAR(50)
-		- [] Content VARCHAR(100)
-		- [] Author INT
-		- [] Created_at (DATETIME)
+	- [X] Articles
+		- [X] ID INT AUTO_INCREMENT NON NULL
+		- [X] Title VARCHAR(50)
+		- [X] Content VARCHAR(100)
+		- [X] Author INT
+		- [X] Created_at (DATETIME)
 	- [] Comments
 		- [] ID INT AUTO_INCREMENT NON NULL
 		- [] Article_ID (INT)
