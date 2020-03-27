@@ -1,8 +1,8 @@
-1 - [] Initialiser un projet Node
+1 - [X] Initialiser un projet Node
 2 - [X] Initialiser un projet Git
 3 - [] Publication sur Github
 4 - [] Installation eslint et configuration
-5 - [] Installation express et Mysql
+5 - [X] Installation express et Mysql
 6 - [] Création d'une table Mysql -> mettre les commandes de créations dans le projet (fichier sql)
 	- [] Articles
 		- [] ID INT AUTO_INCREMENT NON NULL

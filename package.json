@@ -1,0 +1,15 @@
+{
+  "name": "projet-6",
+  "version": "1.0.0",
+  "description": "1 - [] Initialiser un projet Node\r 2 - [X] Initialiser un projet Git\r 3 - [] Publication sur Github\r 4 - [] Installation eslint et configuration\r 5 - [] Installation express et Mysql\r 6 - [] Création d'une table Mysql -> mettre les commandes de créations dans le projet (fichier sql)\r \t- [] Articles\r \t\t- [] ID INT AUTO_INCREMENT NON NULL\r \t\t- [] Title VARCHAR(50)\r \t\t- [] Content VARCHAR(100)\r \t\t- [] Author INT\r \t\t- [] Created_at (DATETIME)\r \t- [] Comments\r \t\t- [] ID INT AUTO_INCREMENT NON NULL\r \t\t- [] Article_ID (INT)\r \t\t- [] Author INT\r \t\t- [] Content VARCHAR(100)\r \t\t- [] Created_at (DATETIME)\r - [] Création d'un CRD (pas d'update, on la pas vu) node :\r \t- [] Route '/api/articles/create' => permet de créer un article id\r \t- [] Route '/api/articles/delete' => permet de supprimer un article par son id\r \t- [] Route '/api/articles' => permet de récupérer les 5 dernièrs articles dans un tableau\r \t- [] Route '/api/comments/create' => permet de créer un commentaire\r \t- [] Route '/api/comments/delete' => permet de supprimer un commentaire par son id\r \t- [] Route '/api/comments' => permet de récupérer les 5 dernièrs commentaires\r - [] Création de formulaires HTML pour tout tester\r \t- [] Articles\r \t\t- [] create.html\r \t\t- [] delete.html\r \t- [] Comments\r \t\t- [] create.html\r \t\t- [] delete.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
