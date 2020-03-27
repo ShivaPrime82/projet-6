@@ -106,3 +106,58 @@ app.route("/api/articles/delete")
             }
         );
     });
+
+// INIT Create for comments
+app.route("/api/comments/create")
+    .get((req, res) => res.status(503).send({ status: "ERROR" }))
+    .post((req, res) => {
+
+        console.log(req.body);
+
+        const comments_article_id = req.body.comments_article_id;
+        const comments_content = req.body.comments_content;
+        const comments_author = req.body.comments_author;
+        const comments_create_at = req.body.comments_create_at;
+
+        const sqlConnection = mysql.createConnection(sqlConfig);
+
+        sqlConnection.query(
+            "INSERT INTO node_comments VALUES (NULL, ?, ?, ?, ?)",
+            [comments_article_id, comments_content, comments_author, comments_create_at],
+            (error, result) => {
+                if (error) {
+                    console.log("ERROR", error.code);
+                    res.status(503).send({ status: "ERROR" });
+                } else {
+                    res.send({ status: "OK" });
+                    console.log(result);
+                }
+                sqlConnection.end();
+            }
+        );
+    });
+
+// INIT Delete for comments
+app.route("/api/comments/delete")
+    .get((req, res) => res.status(503).send({ status: "ERROR" }))
+    .post((req, res) => {
+
+        const comments_id = req.body.comments_id;
+
+        const sqlConnection = mysql.createConnection(sqlConfig);
+
+        sqlConnection.query(
+            "DELETE FROM node_comments WHERE id = ?",
+            [comments_id],
+            (error, result) => {
+                if (error) {
+                    console.log("ERROR", error.code);
+                    res.status(503).send({ status: "ERROR" });
+                } else {
+                    res.send({ status: "OK" });
+                    console.log(result);
+                }
+                sqlConnection.end();
+            }
+        );
+    });

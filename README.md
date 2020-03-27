@@ -24,7 +24,7 @@
 	- [ ] Route '/api/comments/delete' => permet de supprimer un commentaire par son id
 	- [X] Route '/api/comments' => permet de récupérer les 5 dernièrs commentaires
 - [ ] Création de formulaires HTML pour tout tester
-	- [ ] Articles
+	- [X] Articles
 		- [X] create.html
 		- [X] delete.html
 	- [ ] Comments

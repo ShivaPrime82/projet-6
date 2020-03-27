@@ -1,8 +1,8 @@
 {
     "sqlConfig": {
-        "host": "jeremy-cl.bgeso-pedagogique.fr",
-        "user": "bgeso31_jeremy-cl_dbu",
-        "password": "JerCla31!!",
-        "database": "bgeso31_jeremy-cl_db"
+        "host": "localhost",
+        "user": "root",
+        "password": "",
+        "database": "test"
     }
 }
