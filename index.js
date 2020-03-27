@@ -61,14 +61,14 @@ app.route("/api/articles/create")
 
         const articles_title = req.body.articles_title;
         const articles_content = req.body.articles_content;
-        const articles_author = req.body.articles_author;
+        const articles_author_id = req.body.articles_author_id;
         const articles_create_at = req.body.articles_create_at;
 
         const sqlConnection = mysql.createConnection(sqlConfig);
 
         sqlConnection.query(
             "INSERT INTO node_articles VALUES (NULL, ?, ?, ?, ?)",
-            [articles_title, articles_content, articles_author, articles_create_at],
+            [articles_title, articles_content, articles_author_id, articles_create_at],
             (error, result) => {
                 if (error) {
                     console.log("ERROR", error.code);
@@ -116,14 +116,14 @@ app.route("/api/comments/create")
 
         const comments_article_id = req.body.comments_article_id;
         const comments_content = req.body.comments_content;
-        const comments_author = req.body.comments_author;
+        const comments_author_id = req.body.comments_author_id;
         const comments_create_at = req.body.comments_create_at;
 
         const sqlConnection = mysql.createConnection(sqlConfig);
 
         sqlConnection.query(
             "INSERT INTO node_comments VALUES (NULL, ?, ?, ?, ?)",
-            [comments_article_id, comments_content, comments_author, comments_create_at],
+            [comments_article_id, comments_content, comments_author_id, comments_create_at],
             (error, result) => {
                 if (error) {
                     console.log("ERROR", error.code);

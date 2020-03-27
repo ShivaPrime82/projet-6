@@ -5,28 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title>Projet-6 - Ajout d'articles</title>
+    <title>Projet-6 - Ajout de commentaire</title>
 </head>
 
 <body>
-    <h1>Formulaire d'ajout d'articles</h1>
+    <h1>Formulaire d'ajout de commentaire</h1>
     <form action="/api/articles/create" method="POST">
         <fieldset>
             <div>
-                <label for="title">Titre :</label>
-                <input type="text" id="title" name="articles_title">
+                <label for="article">Id de l'article :</label>
+                <input type="number" id="article" name="comments_article_id">
             </div>
             <div>
                 <label for="content">Contenu :</label>
-                <input type="text" id="content" name="articles_content">
+                <input type="text" id="content" name="comments_content">
             </div>
             <div>
                 <label for="author">Auteur :</label>
-                <input type="number" id="author" name="articles_author">
+                <input type="number" id="author" name="comments_author_id">
             </div>
             <div>
                 <label for="create">Crée le :</label>
-                <input type="date" id="create" name="articles_create_at">
+                <input type="date" id="create" name="comments_create_at">
             </div>
             <div class="button">
                 <button type="submit">Envoyer</button>
