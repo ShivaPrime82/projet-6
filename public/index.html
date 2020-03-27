@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Projet-6 - Ajout d'articles</title>
+</head>
+
+<body>
+    <h1>Formulaire d'ajout d'articles</h1>
+    <form action="/api/articles/create" method="POST">
+        <fieldset>
+            <div>
+                <label for="title">Title :</label>
+                <input type="text" id="title" name="articles_title">
+            </div>
+            <div>
+                <label for="content">Content :</label>
+                <input type="text" id="content" name="articles_content">
+            </div>
+            <div>
+                <label for="author">Author :</label>
+                <input type="number" id="author" name="articles_author">
+            </div>
+            <div>
+                <label for="create">Create at :</label>
+                <input type="date" id="create" name="articles_create_at">
+            </div>
+            <div class="button">
+                <button type="submit">Send a article</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
