@@ -13,7 +13,7 @@ app.listen(3000, () => {
 });
 
 // Init static and urlencoded for later (post/get)
-app.use(express.static("./public"));
+app.use(express.static("./public/"));
 app.use(express.urlencoded({ extended: true }));
 
 // Init road for articles 
