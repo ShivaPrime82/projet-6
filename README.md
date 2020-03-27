@@ -16,19 +16,19 @@
 		- [X] Author INT
 		- [X] Content VARCHAR(100)
 		- [X] Created_at (DATETIME)
-- [ ] Création d'un CRD (pas d'update, on la pas vu) node :
+- [X] Création d'un CRD (pas d'update, on la pas vu) node :
 	- [X] Route '/api/articles/create' => permet de créer un article id
 	- [X] Route '/api/articles/delete' => permet de supprimer un article par son id
 	- [X] Route '/api/articles' => permet de récupérer les 5 dernièrs articles dans un tableau
 	- [ ] Route '/api/comments/create' => permet de créer un commentaire
 	- [ ] Route '/api/comments/delete' => permet de supprimer un commentaire par son id
 	- [X] Route '/api/comments' => permet de récupérer les 5 dernièrs commentaires
-- [ ] Création de formulaires HTML pour tout tester
+- [X] Création de formulaires HTML pour tout tester
 	- [X] Articles
 		- [X] create.html
 		- [X] delete.html
-	- [ ] Comments
-		- [ ] create.html
-		- [ ] delete.html
+	- [W] Comments
+		- [X] create.html
+		- [X] delete.html
 
 
