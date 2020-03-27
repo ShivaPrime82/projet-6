@@ -20,8 +20,8 @@
 	- [X] Route '/api/articles/create' => permet de créer un article id
 	- [X] Route '/api/articles/delete' => permet de supprimer un article par son id
 	- [X] Route '/api/articles' => permet de récupérer les 5 dernièrs articles dans un tableau
-	- [ ] Route '/api/comments/create' => permet de créer un commentaire
-	- [ ] Route '/api/comments/delete' => permet de supprimer un commentaire par son id
+	- [X] Route '/api/comments/create' => permet de créer un commentaire
+	- [X] Route '/api/comments/delete' => permet de supprimer un commentaire par son id
 	- [X] Route '/api/comments' => permet de récupérer les 5 dernièrs commentaires
 - [X] Création de formulaires HTML pour tout tester
 	- [X] Articles
