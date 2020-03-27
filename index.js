@@ -21,7 +21,7 @@ app.get("/api/articles", (req, res) => {
     const sqlConnection = mysql.createConnection(sqlConfig);
 
     sqlConnection.query(
-        "SELECT id, title, content, author, created_at FROM node_articles WHERE created_at > 5",
+        "SELECT id, title, content, author, created_at FROM node_articles ORDER BY id DESC LIMIT 5",
         (error, result) => {
             if (error) {
                 console.log("ERROR", error.code);
@@ -94,7 +94,7 @@ app.get("/api/comments", (req, res) => {
     const sqlConnection = mysql.createConnection(sqlConfig);
 
     sqlConnection.query(
-        "SELECT id, article_id, content, author, created_at FROM node_comments WHERE created_at > 5",
+        "SELECT id, article_id, content, author, created_at FROM node_comments ORDER BY id DESC LIMIT 5",
         (error, result) => {
             if (error) {
                 console.log("ERROR", error.code);
