@@ -21,31 +21,13 @@ app.get("/api/articles", (req, res) => {
     const sqlConnection = mysql.createConnection(sqlConfig);
 
     sqlConnection.query(
-        "SELECT article_id, title, content, author, create_at FROM node_articles WHERE create_at > 5",
+        "SELECT id, title, content, author, created_at FROM node_articles WHERE created_at > 5",
         (error, result) => {
             if (error) {
                 console.log("ERROR", error.code);
             } else {
                 console.log("RESULT", result);
-                res.send(result[0]);
-            }
-            sqlConnection.end();
-        }
-    );
-});
-
-// Init road for comments 
-app.get("/api/comments", (req, res) => {
-    const sqlConnection = mysql.createConnection(sqlConfig);
-
-    sqlConnection.query(
-        "SELECT comments_id, article_id, content, author, create_at FROM node_comments WHERE create_at > 5",
-        (error, result) => {
-            if (error) {
-                console.log("ERROR", error.code);
-            } else {
-                console.log("RESULT", result);
-                res.send(result[0]);
+                res.send(result);
             }
             sqlConnection.end();
         }
@@ -106,6 +88,24 @@ app.route("/api/articles/delete")
             }
         );
     });
+
+// Init road for comments 
+app.get("/api/comments", (req, res) => {
+    const sqlConnection = mysql.createConnection(sqlConfig);
+
+    sqlConnection.query(
+        "SELECT id, article_id, content, author, created_at FROM node_comments WHERE created_at > 5",
+        (error, result) => {
+            if (error) {
+                console.log("ERROR", error.code);
+            } else {
+                console.log("RESULT", result);
+                res.send(result);
+            }
+            sqlConnection.end();
+        }
+    );
+});
 
 // INIT Create for comments
 app.route("/api/comments/create")
